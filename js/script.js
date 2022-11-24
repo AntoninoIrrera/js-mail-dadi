@@ -8,17 +8,25 @@ if(dadiGiocatore > dadiComputer){
     console.log("numero dadi giocatore",dadiGiocatore);
     console.log("numero dadi computer",dadiComputer);
     console.log("Ha vinto il giocatore");
-    document.getElementById("dadiOutput").innerHTML = "Numero dadi giocatore " + dadiGiocatore + " Numero dadi computer " + dadiComputer + " Ha vinto il giocatore ";
+    document.getElementById("dadiGiocatore").innerHTML = "Numero dadi giocatore: " + dadiGiocatore;
+    document.getElementById("dadiComputer").innerHTML = "Numero dadi computer: " + dadiComputer;
+    document.getElementById("esito").innerHTML = "Ha vinto il giocatore";
 }
 else if(dadiComputer > dadiGiocatore){
     console.log("numero dadi giocatore", dadiGiocatore);
     console.log("numero dadi computer", dadiComputer);
     console.log("Ha vinto il computer");
+    document.getElementById("dadiGiocatore").innerHTML = "Numero dadi giocatore: " + dadiGiocatore;
+    document.getElementById("dadiComputer").innerHTML = "Numero dadi computer: " + dadiComputer;
+    document.getElementById("esito").innerHTML = "Ha vinto il computer";
 }
 else{
     console.log("numero dadi giocatore", dadiGiocatore);
     console.log("numero dadi computer", dadiComputer);
     console.log("Patta");
+    document.getElementById("dadiGiocatore").innerHTML = "Numero dadi giocatore: " + dadiGiocatore;
+    document.getElementById("dadiComputer").innerHTML = "Numero dadi computer: " + dadiComputer;
+    document.getElementById("esito").innerHTML = "Patta";
 }
 
 // -----------------------------------------
