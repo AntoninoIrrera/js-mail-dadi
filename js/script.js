@@ -34,12 +34,12 @@ bottone.addEventListener("click",function(){
         
         
         if (emailUser.value == emailList[i]) {
-            console.log("ce");
+            console.log("La tua email è presente nel database");
         }
 
     }
 
-    
+
 
 
 
