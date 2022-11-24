@@ -14,6 +14,11 @@ else if(dadiComputer > dadiGiocatore){
     console.log("numero dadi computer", dadiComputer);
     console.log("Ha vinto il computer");
 }
+else{
+    console.log("numero dadi giocatore", dadiGiocatore);
+    console.log("numero dadi computer", dadiComputer);
+    console.log("Patta");
+}
 
 // -----------------------------------------
 
