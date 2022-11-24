@@ -17,3 +17,31 @@ else if(dadiComputer > dadiGiocatore){
 
 // -----------------------------------------
 
+// controllo email
+
+
+const bottone = document.querySelector("a.btn-primary");
+const emailUser = document.getElementById("emailUser");
+
+
+
+const emailList = ["fabiovolo@gmail.com", "pinopanzerotto@libero.it", "tizioqualsiasi@gmail.com", "emailanonima@anonymous.org"];
+
+bottone.addEventListener("click",function(){
+    
+    for(let i = 0; i< emailList.length; i++){
+       
+        
+        
+        if (emailUser.value == emailList[i]) {
+            console.log("ce");
+        }
+
+    }
+
+    
+
+
+
+});
+
