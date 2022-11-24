@@ -4,30 +4,40 @@
 const dadiGiocatore = Math.floor(Math.random() * 6) + 1;
 const dadiComputer = Math.floor(Math.random() * 6) + 1;
 
-if(dadiGiocatore > dadiComputer){
-    console.log("numero dadi giocatore",dadiGiocatore);
-    console.log("numero dadi computer",dadiComputer);
-    console.log("Ha vinto il giocatore");
-    document.getElementById("dadiGiocatore").innerHTML = "Numero dadi giocatore: " + dadiGiocatore;
-    document.getElementById("dadiComputer").innerHTML = "Numero dadi computer: " + dadiComputer;
-    document.getElementById("esito").innerHTML = "Ha vinto il giocatore";
-}
-else if(dadiComputer > dadiGiocatore){
-    console.log("numero dadi giocatore", dadiGiocatore);
-    console.log("numero dadi computer", dadiComputer);
-    console.log("Ha vinto il computer");
-    document.getElementById("dadiGiocatore").innerHTML = "Numero dadi giocatore: " + dadiGiocatore;
-    document.getElementById("dadiComputer").innerHTML = "Numero dadi computer: " + dadiComputer;
-    document.getElementById("esito").innerHTML = "Ha vinto il computer";
-}
-else{
-    console.log("numero dadi giocatore", dadiGiocatore);
-    console.log("numero dadi computer", dadiComputer);
-    console.log("Patta");
-    document.getElementById("dadiGiocatore").innerHTML = "Numero dadi giocatore: " + dadiGiocatore;
-    document.getElementById("dadiComputer").innerHTML = "Numero dadi computer: " + dadiComputer;
-    document.getElementById("esito").innerHTML = "Patta";
-}
+const bottoneDadi = document.querySelector("a.btn-secondary");
+
+
+bottoneDadi.addEventListener("click", function(){
+
+    if (dadiGiocatore > dadiComputer) {
+        console.log("numero dadi giocatore", dadiGiocatore);
+        console.log("numero dadi computer", dadiComputer);
+        console.log("Ha vinto il giocatore");
+        document.getElementById("dadiGiocatore").innerHTML = "Numero dadi giocatore: " + dadiGiocatore;
+        document.getElementById("dadiComputer").innerHTML = "Numero dadi computer: " + dadiComputer;
+        document.getElementById("esito").innerHTML = "Ha vinto il giocatore";
+    }
+    else if (dadiComputer > dadiGiocatore) {
+        console.log("numero dadi giocatore", dadiGiocatore);
+        console.log("numero dadi computer", dadiComputer);
+        console.log("Ha vinto il computer");
+        document.getElementById("dadiGiocatore").innerHTML = "Numero dadi giocatore: " + dadiGiocatore;
+        document.getElementById("dadiComputer").innerHTML = "Numero dadi computer: " + dadiComputer;
+        document.getElementById("esito").innerHTML = "Ha vinto il computer";
+    }
+    else {
+        console.log("numero dadi giocatore", dadiGiocatore);
+        console.log("numero dadi computer", dadiComputer);
+        console.log("Patta");
+        document.getElementById("dadiGiocatore").innerHTML = "Numero dadi giocatore: " + dadiGiocatore;
+        document.getElementById("dadiComputer").innerHTML = "Numero dadi computer: " + dadiComputer;
+        document.getElementById("esito").innerHTML = "Patta";
+    }
+
+
+});
+
+
 
 // -----------------------------------------
 
@@ -42,7 +52,7 @@ const emailList = ["fabiovolo@gmail.com", "pinopanzerotto@libero.it", "tizioqual
 
 
 
-bottone.addEventListener("click",function(){
+bottone.addEventListener("click", function(){
     
     /*
 
