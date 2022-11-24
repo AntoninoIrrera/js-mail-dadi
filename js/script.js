@@ -32,13 +32,14 @@ const emailUser = document.getElementById("emailUser");
 const emailList = ["fabiovolo@gmail.com", "pinopanzerotto@libero.it", "tizioqualsiasi@gmail.com", "emailanonima@anonymous.org"];
 
 
+
 bottone.addEventListener("click",function(){
     
+    /*
 
     const ugualeEmail = (element) => element == emailUser.value;
 
     // console.log(emailList.some(ugualeEmail));
-
 
     if (emailList.some(ugualeEmail) == true){
         console.log("La tua email è presente nel database");
@@ -46,16 +47,32 @@ bottone.addEventListener("click",function(){
         console.log("La tua email non è presente nel database");
     }
 
+    */
 
-    // for(let i = 0; i< emailList.length; i++){
-       
+
+    
+    let emailTrovata = false;
+    // let contatore  = 0;
+    for(let i = 0; i< emailList.length; i++){   
         
         
-    //     if (emailUser.value == emailList[i]) {
-    //         console.log("La tua email è presente nel database");
-    //     }
-    // }
+        if (emailUser.value == emailList[i]) {
+            emailTrovata = true
+            // contatore++;
+        }
 
+        
+    
+    }
+
+    if(emailTrovata)
+    // if(contatore == 1)
+    {
+        console.log("La tua email è presente nel database");
+    }
+    else{
+        console.log("La tua email non è presente nel database");
+    }
 
 
 
