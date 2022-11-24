@@ -24,21 +24,32 @@ const bottone = document.querySelector("a.btn-primary");
 const emailUser = document.getElementById("emailUser");
 
 
-
 const emailList = ["fabiovolo@gmail.com", "pinopanzerotto@libero.it", "tizioqualsiasi@gmail.com", "emailanonima@anonymous.org"];
+
 
 bottone.addEventListener("click",function(){
     
-    for(let i = 0; i< emailList.length; i++){
+
+    const ugualeEmail = (element) => element == emailUser.value;
+
+    // console.log(emailList.some(ugualeEmail));
+
+
+    if (emailList.some(ugualeEmail) == true){
+        console.log("ce");
+    }else{
+        console.log("non ce");
+    }
+
+
+    // for(let i = 0; i< emailList.length; i++){
        
         
         
-        if (emailUser.value == emailList[i]) {
-            console.log("La tua email è presente nel database");
-        }
-
-    }
-
+    //     if (emailUser.value == emailList[i]) {
+    //         console.log("La tua email è presente nel database");
+    //     }
+    // }
 
 
 
