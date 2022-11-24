@@ -36,9 +36,9 @@ bottone.addEventListener("click",function(){
 
 
     if (emailList.some(ugualeEmail) == true){
-        console.log("ce");
+        console.log("La tua email è presente nel database");
     }else{
-        console.log("non ce");
+        console.log("La tua email non è presente nel database");
     }
 
 
