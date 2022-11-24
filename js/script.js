@@ -1,13 +1,14 @@
 
 // gioco dei dadi
 
-const dadiGiocatore = Math.round(Math.random() * 5) + 1;
-const dadiComputer = Math.round(Math.random() * 5) + 1;
+const dadiGiocatore = Math.floor(Math.random() * 6) + 1;
+const dadiComputer = Math.floor(Math.random() * 6) + 1;
 
 if(dadiGiocatore > dadiComputer){
     console.log("numero dadi giocatore",dadiGiocatore);
     console.log("numero dadi computer",dadiComputer);
     console.log("Ha vinto il giocatore");
+    document.getElementById("dadiOutput").innerHTML = "Numero dadi giocatore " + dadiGiocatore + " Numero dadi computer " + dadiComputer + " Ha vinto il giocatore ";
 }
 else if(dadiComputer > dadiGiocatore){
     console.log("numero dadi giocatore", dadiGiocatore);
@@ -68,9 +69,11 @@ bottone.addEventListener("click",function(){
     if(emailTrovata)
     // if(contatore == 1)
     {
+        document.getElementById("output").innerHTML = "La tua email è presente nel database";
         console.log("La tua email è presente nel database");
     }
     else{
+        document.getElementById("output").innerHTML = "La tua email non è presente nel database";
         console.log("La tua email non è presente nel database");
     }
 
